@@ -1,0 +1,195 @@
+html{
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 120%;
+}
+#navbar{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  /*background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);*/
+  color: #000;
+  opacity:1;
+  z-index: 1;
+}
+
+#container{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3vw;
+}
+#container li{
+  padding: 10px;
+}
+/*NOT WORKING!!!!!!*/
+@media screen and (max-width: 600px){
+  #navbar{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #container{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+#navbar ul,a{
+  list-style: none;
+  text-decoration: none;
+}
+#right{
+  text-align: right;
+}
+#welcome-section{
+  display: inline-block;
+  min-height: 100vh;  
+  margin-bottom: 20vh;
+  margin-top: -20px;
+  margin-left: -10px;
+  width: 100vw;
+  opactiy: 1;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8d/Pan_flyover_animation.gif);
+ background-size: 100vw 100vh; 
+  /*background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);*/
+}
+#welcome-section p{
+  text-align: left;
+  padding-top: 40vh;
+  padding-left: 15vw;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: bold;
+  font-size: 250%;
+  /*welcome-section moves when font size increased*/
+}
+/*about section*/
+#about{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#left-flex{
+  
+  width: 40%;
+  text-align: right;
+  padding-right: 5%;
+}
+#right-flex{
+ 
+  width: 60%;
+}
+#bae-photo{
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+/*Skills-and-achievement section*/
+#skills-and-achievements{
+  display:flex;
+  justify-content: center;
+  
+}
+@media screen and (max-width: 650px){
+  #skills-and-achievements{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  #skills{
+    width: 100vw;
+  }
+  #achievements{
+    width: 100vw;
+  }
+}
+#skills{
+  width: 50%;
+  text-align: center;
+}
+#skills img{
+  height: 120px;
+  width: 128px;
+  padding: 10px;
+}
+#achievements{
+  width: 50%;
+}
+#achievements-div{
+  
+}
+#achievements h1{
+  
+}
+#achievements ul, a{
+  text-docoration: none;
+  list-style: none;
+}
+#achievements li{
+  margin-bottom: 10px;
+}
+/*project section*/
+#projects{
+  display: flex;
+}
+@media screen and (max-width: 600px){
+  #projects{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.project-tile{
+  padding: 20px;
+  position: relative;
+}
+.project-pic{
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 25px;
+  transition: 0.5s;
+  opacity: 1;
+}
+.overlay{
+  transition: 0.5s;
+  opacity: 0;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-color: #008CBA;
+  border-radius: 25px;
+}
+.project-tile:hover .project-pic{
+  background-color: black;
+  opacity: 0.3;
+}
+.project-tile:hover .overlay{
+  opacity: 1;
+}
+.hover-text{
+  color: white;
+  font-size: 20px;
+  text-align:center;
+  padding-top: 20%;
+}
+.project-title{
+  text-align: center;
+  margin-top: 5vh;
+}
+#contact{
+  text-align: center;
+  vertical-align: center;
+  min-height: 7vh;
+  background-color: black;
+  color: #fff;
+}
+h1{text-align: center;}
+hr{
+  width: 100%;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
